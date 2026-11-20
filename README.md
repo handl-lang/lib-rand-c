@@ -2,17 +2,14 @@
 
 Native random implementation (C entropy) for the `rand` ports.
 
-Part of the `handl-lang` org split (ADR-0128). History is a `git subtree
-split` of `kit-canonical/handl-packages/rand-c/`.
-
 ## Layout
 
 ```text
-src/        the .hnl sources
-pkg.hnl     dependencies, when any: `{ deps: { <name>: "branch:<ref>" } }`
+src/index.hnl   the .hnl sources
+src/entropy.hnl the C-entropy backend
+pkg.hnl         package manifest — modules, deps, description, license
+ci.sh           bupha entry → scripts/hnl-gate.sh
 ```
-
-Dependencies: none
 
 ## Gate
 
