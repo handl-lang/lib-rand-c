@@ -16,7 +16,7 @@
 export next_u32: () ~> Number := () ~> do {
   -- `sodium_init` is idempotent; subsequent calls return 1 (already inited).
   ffi.call("libsodium.so", "sodium_init", [], [], "i32", false);
-  raw = ffi.call(
+  raw := ffi.call(
     "libsodium.so",
     "randombytes_random",
     [],
