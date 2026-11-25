@@ -10,7 +10,7 @@ Native random implementation (C entropy) for the `rand` ports. Pure
 | `src/index.hnl` | the rand surface |
 | `src/entropy.hnl` | the C-entropy backend |
 | `pkg.hnl` | manifest — `modules: ["rand-c"]` |
-| `scripts/hnl-gate.sh`, `ci.sh` | the gate / bupha entry |
+| `scripts/hnl-gate.sh`, `workflows/gate.yaml` | the gate / bupha entry |
 
 ## Contract
 
