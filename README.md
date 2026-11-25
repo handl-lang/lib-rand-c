@@ -8,7 +8,7 @@ Native random implementation (C entropy) for the `rand` ports.
 src/index.hnl   the .hnl sources
 src/entropy.hnl the C-entropy backend
 pkg.hnl         package manifest — modules, deps, description, license
-ci.sh           bupha entry → scripts/hnl-gate.sh
+workflows/gate.yaml           bupha entry (handl-gates) → scripts/hnl-gate.sh
 ```
 
 ## Gate
